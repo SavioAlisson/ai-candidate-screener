@@ -1,0 +1,5 @@
+# Core pipeline uses the Python standard library + raw HTTPS calls to the
+# Claude and Ashby APIs (urllib), so runtime deps are intentionally minimal.
+
+# Slack intake bot (/intake slash command, Socket Mode) — slack_intake.py only
+slack-bolt>=1.18.0

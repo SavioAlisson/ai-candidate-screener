@@ -1,0 +1,48 @@
+# ── Secrets & API keys (NEVER commit) ──────────────────────────────
+.env
+.env.*
+!.env.example
+*.env
+**/credentials.json
+**/*_secret*
+**/*_token*
+.google_token.json
+.ashby_session.json
+
+# ── Candidate data & caches (privacy — NEVER commit) ───────────────
+.candidate_cache/
+*_cache.json
+.linkedin_cache.json
+.posts_cache.json
+.crunchbase_cache.json
+screening_log.csv
+screening_log.csv.*
+screening_results*.json
+*.csv
+*.csv.bak
+backfill_csvs/
+_output/
+out/
+eval/outputs/
+eval/*.csv
+eval/*.json
+
+# ── Runtime state / logs (local only) ──────────────────────────────
+.screening_claims.json
+.push_to_ashby_log.json
+.known_screened_ids.json
+.query_learnings.json
+*.log
+logs/
+
+# ── Python / OS artifacts ──────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+node_modules/
